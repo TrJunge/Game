@@ -99,7 +99,7 @@ namespace Server
                         string[] positions = answer.Split(new char[] {'p', 'o','s'});
                         foreach (string position in positions)
                         {
-                            Send(clientbuf.workSocket, position.Trim(new char[] { '(', ' ', ')' })+"pos");
+                            Send(clientbuf.workSocket, position.Trim(new char[] { '(', ' ', ')' }));
                         }
                     }
                     Send(clientbuf.workSocket, answer);
