@@ -17,10 +17,10 @@ namespace Server
         public int time;
         public int score;
         public List<Player> players = new List<Player>();
-        public string creator;
+        public Player creator;
 
 
-        public Lobby(string name, string nameLibrary, int countPlayers, /*Team team1, Team team2,*/ int time, int wordsForWin, bool minus, string creator)
+        public Lobby(string name, string nameLibrary, int countPlayers, /*Team team1, Team team2,*/ int time, int wordsForWin, bool minus, Player creator)
         {
             this.name = name;
             this.countPlayers = countPlayers;
@@ -44,6 +44,11 @@ namespace Server
         public void removeInLobby(Player player)
         {
             players.Remove(player);
+        }
+
+        public void changeCreator()
+        {
+            creator = players[0];
         }
 
         //public void subscribeTeam(Team team, string nick)
