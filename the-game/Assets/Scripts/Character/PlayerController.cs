@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 
     public Character Player;
     bool Jump = true;
+
     private void Start()
     {
         Player = Player == null ? GetComponent<Character>() : Player;
