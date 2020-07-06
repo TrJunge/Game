@@ -102,6 +102,10 @@ namespace Server
                             Send(clientbuf.workSocket, position.Trim(new char[] { '(', ' ', ')' })+"pos");
                         }
                     }
+                    if (answer.EndsWith("auth"))
+                    {
+                        
+                    }
                     Send(clientbuf.workSocket, answer);
                 }
             }

@@ -14,17 +14,17 @@ namespace Server
         public string teamName2;
         //public Team team1;
         //public Team team2;
-        public int timeRound;
+        public int time;
         public int score;
         public List<Player> players = new List<Player>();
         public string creator;
 
 
-        public Lobby(string name, string nameLibrary, int countPlayers, /*Team team1, Team team2,*/ int timeRound, int wordsForWin, bool minus, string creator)
+        public Lobby(string name, string nameLibrary, int countPlayers, /*Team team1, Team team2,*/ int time, int wordsForWin, bool minus, string creator)
         {
             this.name = name;
             this.countPlayers = countPlayers;
-            this.timeRound = timeRound;
+            this.time = time;
             //this.team1 = team1;
             //this.team2 = team2;
             this.creator = creator;
@@ -33,7 +33,7 @@ namespace Server
 
         public string info()
         {
-            return name + "," + countPlayers.ToString() + "," + timeRound.ToString();
+            return name + "," + countPlayers.ToString() + "," + time.ToString();
         }
 
         public void addInLobby(Player player)
