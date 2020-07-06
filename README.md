@@ -4,6 +4,9 @@
 - Лобби
 {
     Получение:
+        Создание лобби - nameLobby + type + countPlayers + createlobby;
+        Вход в лобби - nameLobby + joinLobby;
+        Выход из лобби - nameLobby + exitLobby.
     Отправка:
 }
 - Авторизация 
