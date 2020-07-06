@@ -58,7 +58,7 @@ public class ShootableMonster : Monster
 
         if (ch && ch is Character)
         {
-            if (Mathf.Abs(ch.transform.position.x - transform.position.x) < 1F) 
+            if (Mathf.Abs(ch.transform.position.x - transform.position.x) < 0.3F) 
             {
                 ReceiveDamage();
             } 

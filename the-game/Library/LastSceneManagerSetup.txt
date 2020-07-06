@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scene/Server/Mode_menu.unity
+- path: Assets/Scene/Training.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
