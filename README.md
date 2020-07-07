@@ -3,9 +3,9 @@
 # Server
 - Лобби
     ## Получение:
-        ### Создание лобби - nameLobby + type + countPlayers + createlobby
-        ### Вход в лобби - nameLobby + joinLobby
-        ### Выход из лобби - nameLobby + exitLobby
+        Создание лобби - nameLobby + type + countPlayers + createlobby
+        Вход в лобби - nameLobby + joinLobby
+        Выход из лобби - nameLobby + exitLobby
     ## Отправка:
 - Авторизация 
     ## Получение:
@@ -16,26 +16,26 @@
 # Client
 - Лобби
     ## Отправка:
-        ### Создание лобби - nameLobby + type + countPlayers + createlobby
-        ### Вход в лобби - nameLobby + joinLobby
-        ### Выход из лобби - nameLobby + exitLobby
+        Создание лобби - nameLobby + type + countPlayers + createlobby
+        Вход в лобби - nameLobby + joinLobby
+        Выход из лобби - nameLobby + exitLobby
     ## Получение:
 - Авторизация
     ## Отправка:
-        ### Авторизация - login + password + nickname + auth
+        Авторизация - login + password + nickname + auth
     ## Получение:
-        ### В случае если авторизация прогшла:
-            #### Успешно: Okauth
-            #### Провалено: Failauth
+         В случае если авторизация прошла:
+            Успешно: Okauth
+            Провалено: Failauth
 - Регистрация
     ## Отправка:
-        ### Регистрация - login + password + reg
+        Регистрация - login + password + reg
     ## Получение: 
-        ### В случае если регистрация прошла:
-            #### Успешно:Okreg
-            #### Провалена:Failreg
+        В случае если регистрация прошла:
+            Успешно:Okreg
+            Провалена:Failreg
 - Главная меню
     ## Отправка:
-        ### Смена ника - nickname + changeNickname
+        Смена ника - nickname + changeNickname
     ## Получение:
-        ### Смена ника - OkchangeNickname
+        Смена ника - OkchangeNickname
