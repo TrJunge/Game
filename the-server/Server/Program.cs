@@ -94,6 +94,17 @@ namespace Server
                 if (content != "")
                 {
                     Console.WriteLine("Сообщение от " + clientbuf.workSocket.RemoteEndPoint + ": " + content + ".");
+<<<<<<< HEAD
+=======
+                    if (answer.EndsWith("pos"))
+                    {
+                        string[] positions = answer.Split(new char[] {'p', 'o','s'});
+                        foreach (string position in positions)
+                        {
+                            Send(clientbuf.workSocket, position.Trim(new char[] { '(', ' ', ')' }));
+                        }
+                    }
+>>>>>>> 617604784bebeffacca861375cd8b80ccc552b09
                     Send(clientbuf.workSocket, answer);
                 }
             }
