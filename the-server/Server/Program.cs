@@ -94,18 +94,6 @@ namespace Server
                 if (content != "")
                 {
                     Console.WriteLine("Сообщение от " + clientbuf.workSocket.RemoteEndPoint + ": " + content + ".");
-                    if (answer.EndsWith("pos"))
-                    {
-                        string[] positions = answer.Split(new char[] {'p', 'o','s'});
-                        foreach (string position in positions)
-                        {
-                            Send(clientbuf.workSocket, position.Trim(new char[] { '(', ' ', ')' })+"pos");
-                        }
-                    }
-                    if (answer.EndsWith("auth"))
-                    {
-                        
-                    }
                     Send(clientbuf.workSocket, answer);
                 }
             }
