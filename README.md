@@ -1,16 +1,3 @@
-# Server
-- Лобби
-    #### Получение:
-        Создание лобби - nameLobby + type + countPlayers + createlobby
-        Вход в лобби - nameLobby + joinLobby
-        Выход из лобби - nameLobby + exitLobby
-    #### Отправка:
-- Авторизация 
-    #### Получение:
-    #### Отправка:
-- Регистрация
-    #### Получение:
-    #### Отправка:
 # Client
 - Лобби
     ## Отправка:
@@ -37,3 +24,16 @@
         Смена ника - nickname + changeNickname
     ## Получение:
         Смена ника - OkchangeNickname
+# Server
+- Лобби
+    #### Получение:
+        Создание лобби - nameLobby + type + countPlayers + createlobby
+        Вход в лобби - nameLobby + joinLobby
+        Выход из лобби - nameLobby + exitLobby
+    #### Отправка:
+- Авторизация 
+    #### Получение:
+    #### Отправка:
+- Регистрация
+    #### Получение:
+    #### Отправка:
